@@ -1,0 +1,164 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    background: #fff;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+p {
+    margin: 0 0 $spacing__unit;
+}
+
+a {
+    color: $color__secondary;
+    opacity: 1;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color__secondary;
+        opacity: .95;
+        transition: all $link_transition;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+        color: $color__secondary;
+        opacity: 1;
+    }
+}
+
+blockquote {
+    border-left: 3px solid $color__border-light;
+    margin-bottom: $spacing__unit;
+    padding-left: $spacing__unit;
+
+    @include clearboth;
+
+    cite {
+        color: $color__text-main;
+        font-size: $font__size-sm;
+        margin-top: $spacing__unit;
+        opacity: .8;
+    }
+}
+
+hr {
+    background: $color__border-light;
+    border: 0;
+    height: 2px;
+    margin: (2 * $spacing__unit) 0;
+    padding: 0;
+}
+
+input {
+    font-size: $font__size-md;
+    padding: #{$spacing__unit * 0.8} 5px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid $color__border-light;
+}
+
+select {
+    font-size: $font__size-sm;
+    padding: #{$spacing__unit * 0.6} 0;
+}
+
+svg {
+    fill: $color__text-main;
+    overflow: hidden;
+ 
+    path {
+        fill: inherit;
+        stroke: inherit;
+    }    
+}
+
+// Buttons 
+a.button,
+button.button,
+input.button,
+#respond input#submit {
+
+    background-color: $color__primary;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid $color__border-light;
+    color: $color__primary-text;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $font__size-md;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: #{$spacing__unit * 0.8} $spacing__unit;
+    text-decoration: none;
+    text-shadow: none;
+
+    &:hover {
+        background-color: darken( $color__primary, 2% );
+        color: $color__primary-text;
+        transition: all $background_transition;
+    }
+
+    &.alt {
+        background-color: $color__secondary;
+        border: 1px solid $color__border-light;
+        color: $color__secondary-text;
+
+        &:hover {
+            background-color: lighten( $color__secondary, 3% );
+            color: $color__secondary-text;
+            transition: all $background_transition;
+        }
+
+        &.disabled,
+        &:disabled,
+        &:disabled[disabled],
+        &.disabled:hover,
+        &:disabled:hover,
+        &:disabled[disabled]:hover {
+            background-color: $color__secondary;
+            color: $color__secondary-text;
+        }
+    }
+
+    &:disabled,
+    &.disabled,
+    &:disabled[disabled] {
+        color: inherit;
+        cursor: not-allowed;
+        opacity: .5;
+
+        &:hover {
+            background: $color__primary;
+            color: inherit;
+        }
+    }
+}
+
+fieldset {
+    border-color: $color__border-light;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 3px;
+    padding: $spacing__unit;
+}

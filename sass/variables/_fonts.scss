@@ -1,0 +1,15 @@
+$font__heading:  'Poppins', sans-serif;
+$font__body:     'Poppins', sans-serif;;
+$font__pre:      'Courier New', Courier, monospace, monospace;
+
+$font__line-height-heading:  1.3;
+$font__line-height-body:     1.7;
+
+$font__ratio: 1.125;
+ 
+$font__size-xxl: 1em * ( 2 * $font__ratio );
+$font__size-xl:  1em * ( 1.5 * $font__ratio );
+$font__size-lg:  1em * ( 1.25 * $font__ratio );
+$font__size-md:  1em * ( 1 * $font__ratio );
+$font__size-sm:  1em / ( 1 * $font__ratio );
+$font__size-xs:  1em / ( 1.1 * $font__ratio );

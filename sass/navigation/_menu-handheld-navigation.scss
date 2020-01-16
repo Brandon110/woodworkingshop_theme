@@ -1,0 +1,97 @@
+/* Handheld menu */
+
+.handheld-menu {
+    color: $color__secondary-text;
+
+    // Default display
+    display: none;
+
+    left: 0;
+    top: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+ 
+    li {
+        background-color: $color__secondary;
+
+        a {
+            border-top: 1px solid #fff;
+            color: $color__secondary-text;
+            display: block;
+            font-size: $font__size-md;
+            margin: 0 auto;
+            letter-spacing: 0.5px;
+            padding: $spacing__unit;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 100%;
+
+            &:hover {
+                background-color: lighten( $color__secondary, 6% );
+                color: $color__secondary-text;
+                transition: all $background_transition;
+            }
+        }
+
+        &:last-child a {
+            border-bottom: 0;
+        }   
+    }
+
+    .menu-item-has-children {
+        position: relative;
+
+        .toggle-sub-menu {
+            background-color: $color__secondary;
+            background-repeat: no-repeat;
+            border: none;
+            border-left: 1px solid #fff;
+            border-top: 1px solid #fff;
+            color: inherit;
+            cursor: pointer;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: $font__size-md;
+            line-height: inherit;
+            outline: none;
+            overflow: hidden;
+            position: absolute;
+            padding: $spacing__unit;
+            outline: none;
+            right: 0;
+            top: 0;
+            text-align: center;
+            width: 50px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background-color: lighten( $color__secondary, 6% );
+                transition: all $background_transition;
+            }
+        }
+    }
+
+    ul.sub-menu {
+        display: none;
+    }
+
+    ul.sub-menu li a {
+        padding-left: 4 * $spacing__unit;
+    }
+
+    ul.sub-menu li ul.sub-menu li a {
+        padding-left: 5 * $spacing__unit;
+    }
+
+    ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
+        padding-left: 6 * $spacing__unit;
+    }
+
+    ul.sub-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
+        padding-left: 7 * $spacing__unit;
+    }
+}

@@ -1,0 +1,112 @@
+.post-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: #{4 * $spacing__unit};
+    padding: 0;
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    &:after {
+        background: rgba(0, 0, 0, 0.3);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.page-content {
+
+    .post-thumbnail {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.page-title {
+    font-size: $font__size-xl;
+    margin: 0 auto;
+    padding: (2 * $spacing__unit) 0 (2 * $spacing__unit) 0;
+    text-align: center;
+}
+
+.svg-icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.search-item {
+    padding: $spacing__unit 0;
+    margin-bottom: $spacing__unit;
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .post-thumbnail {
+        align-items: flex-start;
+        height: auto;
+        margin-bottom: $spacing__unit;
+
+        &:after {
+            background-color: transparent;
+        }
+
+        img {
+            height: auto;
+            max-width: 200px;
+        }
+    }
+}
+
+.post {
+    padding: $spacing__unit 0;
+
+    .entry-content {
+        margin-bottom: $spacing__unit;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .post-thumbnail {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: #{2 * $spacing__unit};
+        overflow: hidden;
+        @include contentWidth();
+
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.page-links {
+
+    .post-page-numbers {
+        display: inline-block;
+        font-size: $font__size-md;
+        margin-right: 6px;
+    }
+}

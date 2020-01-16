@@ -1,0 +1,43 @@
+.social-menu {
+    color: inherit;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-right: $spacing__unit;
+ 
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                background: lighten(#320001, 4.9%);
+                border-radius: 50%;
+                color: inherit;
+                display: block;
+                padding: $spacing__unit;
+                text-decoration: none;
+
+                &:hover {
+                    background: $color__accent;
+                }
+            }
+
+            .icon {
+                width: 25px;
+                height: 25px;
+
+                @include media( mobile ) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

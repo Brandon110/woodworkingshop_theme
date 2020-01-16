@@ -1,0 +1,78 @@
+/*
+   Theme Name: WoodWorkingShop
+   Author: Brandon Blackwell
+   Description: Perfect theme for wood workers to set up shop online.
+   Version: 1.0.0
+   License: GNU General Public License v2 or later
+   License URI: http://www.gnu.org/licenses/gpl-2.0.html
+   Text Domain: woodworkingshop
+   GitHub Plugin URI: https://github.com/Brandon110/woodworkingshop_theme
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Normalize
+# Typography
+   ## Headings
+# Elements
+# Site Styles
+   ## Footer
+   ## Header
+# Primary
+   ## Posts and Pages
+# Secondary
+   ## Widgets
+# Navgiation
+   ## Primary Menu
+   ## Handheld Menu
+   ## Social Menu
+# Layout
+# Blocks
+--------------------------------------------------------------*/
+
+@import 'sass/variables/variables';
+@import 'sass/mixins/mixins';
+
+
+
+/* Normalize.css */
+
+@import 'sass/normalize';
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Typography */
+
+@import 'sass/typography/typography';
+
+/* Elements */
+
+@import 'sass/elements/elements';
+
+/* Site Styles */
+
+@import 'sass/site/site';
+
+/* Primary */
+
+@import 'sass/site/primary/primary';
+
+/* Widgets */
+
+@import 'sass/site/secondary/widgets';
+
+/* Navigation */
+
+@import 'sass/navigation/navigation';
+
+/* Layout */
+
+@import 'sass/layout/layout';
+
+/* Blocks */
+
+@import 'sass/blocks/blocks';

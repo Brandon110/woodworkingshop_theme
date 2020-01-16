@@ -1,0 +1,111 @@
+.widget {
+    color: inherit;
+    display: block;
+    margin-bottom: $spacing__unit;
+    padding: $spacing__unit 0;
+    position: relative;
+    width: 100%;
+
+    @include media( tablet ) {
+        display: inline-block;
+        padding-right: #{2 * $spacing__unit};
+        width: 33.333%;
+        vertical-align: top;
+
+        &:nth-child(n+3) {
+            padding-right: 0;
+        }
+
+        &:last-child {
+            clear: right;
+        }
+    }
+
+    .widgettitle {
+        color: inherit;
+        font-size: $font__size-md;
+        font-weight: 700;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-size: $font__size-sm;
+
+            a {
+                display: block;
+                color: inherit;
+                padding-bottom: #{0.5 * $spacing__unit};
+                text-decoration: none;
+            }
+
+            &:last-child a {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+}
+ 
+.search-form {
+    display: block;
+    width: 100%;
+
+    .search-wrap {
+        display: inline-block;
+        position: relative;
+        width: auto;
+
+        .search {
+            border-radius: 3px;
+            padding-left: 30px; //Double search form btn width plus 10px
+            width: 100%;
+        }
+
+        .search-form-btn {
+            background: transparent;
+            border: 0;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            outline: none;
+            opacity: .7;
+            width: 10px;
+
+            .icon {
+                width: 20px;
+            }
+        }
+    }
+}
+
+.widget_media_image {
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.widget_products {
+    float: none;
+    padding: 0;
+    width: 100%;
+
+    .widgettitle {
+        border-bottom: 0;
+        font-size: $font__size-xl;
+        font-weight: 700;
+        padding-bottom: $spacing__unit;
+        text-align: center;
+    }
+}
