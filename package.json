@@ -20,7 +20,7 @@
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.6.0",
     "autoprefixer": "^9.7.3",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.19.4",
     "postcss-cli": "^6.1.2"
   },
